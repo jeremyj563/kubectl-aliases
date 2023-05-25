@@ -13,6 +13,10 @@
 # limitations under the License.
 
 alias k='kubectl'
+alias kc='kubectl config'
+alias kcc='kubectl config current-context'
+alias kcg='kubectl config get-contexts'
+alias kcu='kubectl config use-context'
 alias ksys='kubectl --namespace=kube-system'
 alias ka='kubectl apply --recursive -f'
 alias ksysa='kubectl --namespace=kube-system apply --recursive -f'
