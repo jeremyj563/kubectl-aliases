@@ -12,16 +12,34 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# gitpod
-alias gitpod-console='kubectl kots admin-console --namespace gitpod'
-
-# kubernetes
-alias k='kubectl'
+# kubectl additions by jeremyj563
 alias ki='kubectl cluster-info'
 alias kc='kubectl config'
 alias kcc='kubectl config current-context'
 alias kcg='kubectl config get-contexts'
 alias kcu='kubectl config use-context'
+alias kdr='kubectl describe role'
+alias kdrb='kubectl describe rolebinding'
+alias kdsa='kubectl describe serviceaccount'
+alias kdcr='kubectl describe clusterrole'
+alias kdcrb='kubectl describe clusterrolebinding'
+alias kdpv='kubectl describe persistentvolume'
+alias kdpvc='kubectl describe persistenvolumeclaim'
+alias kdds='kubectl describe daemonset'
+alias kgr='kubectl get role'
+alias kgrb='kubectl get rolebinding'
+alias kgsa='kubectl get serviceaccount'
+alias kgcr='kubectl get clusterrole'
+alias kgcrb='kubectl get clusterrolebinding'
+alias kgpv='kubectl get persistentvolume'
+alias kgpvc='kubectl get persistenvolumeclaim'
+alias kgds='kubectl get daemonset'
+
+# kubectl-kots additions by jeremyj563
+alias gitpod-console='kubectl kots admin-console --namespace gitpod'
+
+# kubernetes
+alias k='kubectl'
 alias ksys='kubectl --namespace=kube-system'
 alias ka='kubectl apply --recursive -f'
 alias ksysa='kubectl --namespace=kube-system apply --recursive -f'
